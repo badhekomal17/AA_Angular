@@ -1,0 +1,41 @@
+<html>
+    <body>
+<div class="login-page" [@routerTransition]>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" id="empId" name ="empId" placeholder="{{ 'EmployeeId' | translate }}" required/>
+                    </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" id="empName" name="empName" placeholder="{{ 'Full Name' | translate }}" required/>
+                    </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" id="empDesignation" name="empDesignation" placeholder="{{ 'Employee Desination' | translate }}" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" id="empNumber" name="empNumber" placeholder="{{ 'Employee Desination' | translate }}" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control input-underline input-lg" id="email" placeholder="{{ 'Email' | translate }}"  required/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control input-underline input-lg" id="password" placeholder="{{ 'Password' | translate }}" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" class="form-control input-underline input-lg" id="role" value="User_Role" required/>
+                    </div> 
+                    <div class="form-group">
+                        <input type="hidden" class="form-control input-underline input-lg" id="status" value ="Not Verified" required/>
+                    </div>
+                </div>
+                <a class="btn rounded-btn" [routerLink]="['/dashboard']">{{ 'Register' | translate }}</a>&nbsp;
+                <a class="btn rounded-btn" [routerLink]="['/login']">{{ 'Log in' | translate }}</a>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
